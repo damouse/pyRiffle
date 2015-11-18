@@ -277,7 +277,6 @@ class FabricSession(ApplicationSession):
         #out.info('riff: (%s) registering (%s)' % (self.pdid, procedure,))
         return ApplicationSession.register(self, endpoint, procedure=u'' + procedure, options=options)
 
-
 class ApplianceSession(FabricSession):
     def __init__(self, config):
         super(ApplianceSession, self).__init__(config)
